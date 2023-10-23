@@ -407,7 +407,7 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
     <Reference Include="nunit.framework">
-        <HintPath>E:\Repositorios\Repositorio_VOA\APP_MATHEMATICS\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
+        <HintPath>E:\Repositorios\Repositorio_VOA\Math_Game_beta\APP_MATHEMATICS\Library\PackageCache\com.unity.ext.nunit@1.0.6\net35\unity-custom\nunit.framework.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
         <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.15f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
