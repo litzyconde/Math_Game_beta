@@ -45,9 +45,9 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Services.Core.Network
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Profiling.Core", "Unity.Profiling.Core.csproj", "{49394780-f6ca-f047-2075-455205e72c36}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Services.Core.Configuration", "Unity.Services.Core.Configuration.csproj", "{fbe99da6-8c64-60b2-15fe-8444367c07f5}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{76e17c88-f8cb-c23d-13ca-5bfc878a3fcb}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Services.Core.Configuration", "Unity.Services.Core.Configuration.csproj", "{fbe99da6-8c64-60b2-15fe-8444367c07f5}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unity.Subsystem.Registration", "Unity.Subsystem.Registration.csproj", "{34c966b4-2b02-73c2-d989-12cbd1fb5a4e}"
 EndProject
@@ -148,10 +148,10 @@ Global
 		{1e0f52bc-4bcb-de3c-e919-f0f24a89947e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49394780-f6ca-f047-2075-455205e72c36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{49394780-f6ca-f047-2075-455205e72c36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{fbe99da6-8c64-60b2-15fe-8444367c07f5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{fbe99da6-8c64-60b2-15fe-8444367c07f5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76e17c88-f8cb-c23d-13ca-5bfc878a3fcb}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76e17c88-f8cb-c23d-13ca-5bfc878a3fcb}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{fbe99da6-8c64-60b2-15fe-8444367c07f5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{fbe99da6-8c64-60b2-15fe-8444367c07f5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34c966b4-2b02-73c2-d989-12cbd1fb5a4e}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{34c966b4-2b02-73c2-d989-12cbd1fb5a4e}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{e7c331b4-bfcc-0121-93d0-9b8dc04c18b5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
