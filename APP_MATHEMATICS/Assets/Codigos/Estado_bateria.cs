@@ -7,31 +7,68 @@ public class Estado_bateria : MonoBehaviour
 {
     public Variar_valor variable;
     public GameObject volver;
+    public GameObject seguir;
     public TMP_Text textObject; // referencia al objeto de texto TMPro
-    public
+    private bool gameover;
+    private int anclado;
     // Update is called once per frame
     void Update()
     {
+        if(gameover)
+        {
+            variable.desactivado = true;
+        }
         if(variable.currentValue <=-2)
         {
-            textObject.text = "La bateria se quedo sin energia";
-            volver.SetActive(false);
+            if(!gameover)
+            {
+                textObject.text = "La bateria se quedo sin energia";
+                seguir.SetActive(false);
+                volver.SetActive(true);
+                gameover=true;
+                anclado=-2;
+            }
         }
-        else if(variable.currentValue >=4)
+        else if(variable.currentValue >=5)
         {
-            textObject.text = "La bateria esta sobrecargada";
-            volver.SetActive(false);
+            if(!gameover)
+            {
+                textObject.text = "La bateria esta sobrecargada";
+                seguir.SetActive(false);
+                volver.SetActive(true);
+                gameover=true;
+                anclado=3;
+            }
         }
-        else if(variable.currentValue ==3)
+        else if(variable.currentValue ==4)
         {
-            textObject.text = "La bateria esta cargada exitosamente";
-            volver.SetActive(true);
+            if(!gameover)
+            {
+                textObject.text = "La bateria esta cargada exitosamente";
+                if(!gameover)
+                {
+                    seguir.SetActive(true);
+                    volver.SetActive(false);
+                }
+            }
         }
         else 
         {
-            textObject.text = "La bateria esta en proceso de carga";
-            volver.SetActive(false);
+            if(!gameover)
+            {
+                textObject.text = "La bateria esta en proceso de carga";
+                if(!gameover)
+                {
+                    volver.SetActive(false);
+                    seguir.SetActive(false);
+                }
+            }
         }
 
+    }
+    public void resetgame()
+    {
+        gameover=false;
+        variable.desactivado=false;
     }
 }
