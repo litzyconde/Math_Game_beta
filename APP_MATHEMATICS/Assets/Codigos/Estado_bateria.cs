@@ -8,9 +8,11 @@ public class Estado_bateria : MonoBehaviour
     public Variar_valor variable;
     public GameObject volver;
     public GameObject seguir;
+    public GameObject reintentar;
     public TMP_Text textObject; // referencia al objeto de texto TMPro
     private bool gameover;
     private int anclado;
+    private int intento;
     // Update is called once per frame
     void Update()
     {
@@ -24,7 +26,16 @@ public class Estado_bateria : MonoBehaviour
             {
                 textObject.text = "La bateria se quedo sin energia";
                 seguir.SetActive(false);
-                volver.SetActive(true);
+                if(intento >=5)
+                {
+                    volver.SetActive(true);
+                    intento=0;
+                }
+                else
+                {
+                    reintentar.SetActive(true);
+                    intento++;
+                }
                 gameover=true;
                 anclado=-2;
             }
@@ -35,7 +46,16 @@ public class Estado_bateria : MonoBehaviour
             {
                 textObject.text = "La bateria esta sobrecargada";
                 seguir.SetActive(false);
-                volver.SetActive(true);
+                if(intento >=5)
+                {
+                    volver.SetActive(true);
+                    intento=0;
+                }
+                else
+                {
+                    reintentar.SetActive(true);
+                    intento++;
+                }
                 gameover=true;
                 anclado=3;
             }
@@ -49,6 +69,7 @@ public class Estado_bateria : MonoBehaviour
                 {
                     seguir.SetActive(true);
                     volver.SetActive(false);
+                    reintentar.SetActive(false);
                 }
             }
         }
@@ -61,6 +82,7 @@ public class Estado_bateria : MonoBehaviour
                 {
                     volver.SetActive(false);
                     seguir.SetActive(false);
+                    reintentar.SetActive(false);
                 }
             }
         }
