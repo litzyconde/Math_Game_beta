@@ -26,7 +26,7 @@ public class Estado_bateria : MonoBehaviour
             {
                 textObject.text = "La bateria se quedo sin energia";
                 seguir.SetActive(false);
-                if(intento >=5)
+                if(intento >=3)
                 {
                     volver.SetActive(true);
                     intento=0;
@@ -46,7 +46,7 @@ public class Estado_bateria : MonoBehaviour
             {
                 textObject.text = "La bateria esta sobrecargada";
                 seguir.SetActive(false);
-                if(intento >=5)
+                if(intento >=3)
                 {
                     volver.SetActive(true);
                     intento=0;

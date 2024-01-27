@@ -27,7 +27,7 @@ public class Estado_cohete : MonoBehaviour
             {
                 textObject.text = "La nave se dirije a una estrella, perdiste";
                 seguir.SetActive(false);
-                if(intento >=5)
+                if(intento >=3)
                 {
                     volver.SetActive(true);
                 }
@@ -47,7 +47,7 @@ public class Estado_cohete : MonoBehaviour
             {
                 textObject.text = "La nave se perdera en el espacio";
                 seguir.SetActive(false);
-                if(intento >=5)
+                if(intento >=3)
                 {
                     volver.SetActive(true);
                     intento=0;
