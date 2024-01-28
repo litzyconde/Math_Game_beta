@@ -5,16 +5,16 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638420078644393015
-    m_Hash: 3734593590
+      ticks: 638420096437848348
+    m_Hash: 1753091519
   m_LockFileStatus:
     m_FilePath: E:/Repositorios/Repositorio_VOA/Math_Game_beta/APP_MATHEMATICS/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638420078644859400
-    m_Hash: 191176676
+      ticks: 638420096437848348
+    m_Hash: 343988190
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_LocalPackages:
