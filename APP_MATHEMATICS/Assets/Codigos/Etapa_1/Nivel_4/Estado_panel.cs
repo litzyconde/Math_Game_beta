@@ -52,7 +52,7 @@ public class Estado_panel : MonoBehaviour
                 }
             }
         }
-        else if(variable.currentValue >= 24)
+        else if(variable.currentValue > 24)
         {
             if(!gameover)
             {
@@ -72,7 +72,7 @@ public class Estado_panel : MonoBehaviour
                 anclado=3;
             }
         }
-        else if(variable.currentValue ==6)
+        else if(variable.currentValue ==24)
         {
             if(!gameover)
             {

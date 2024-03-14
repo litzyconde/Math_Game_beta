@@ -16,14 +16,13 @@ public class Variar_limpieza : MonoBehaviour
     {
         // Puedes inicializar el estado de los objetos aquí si es necesario
         UpdateObjects();
-        
-    }
-    void OnEnable() {
         foreach (Transform hijo in padreAutomatico.transform)
         {
             listaDeObjetos.Add(hijo.gameObject);
         }
+        
     }
+
 
     // Update is called once per frame
     void Update()
@@ -38,7 +37,7 @@ public class Variar_limpieza : MonoBehaviour
     {
         if(!desactivado)
         {
-            if (orden == 0 && currentValue < 24)
+            if (orden == 0 && currentValue < 25)
             {
                 currentValue += 1;
             }
@@ -53,9 +52,9 @@ public class Variar_limpieza : MonoBehaviour
             
 
             // Asegurarse de que currentValue esté siempre entre -5 y 5
-            if (currentValue > 24)
+            if (currentValue > 25)
             {
-                currentValue = 24;
+                currentValue = 25;
             }
             else if (currentValue < -6)
             {
@@ -75,12 +74,13 @@ public class Variar_limpieza : MonoBehaviour
 
     void UpdateObjects()
     {
-        int elementosActivados = 24 - currentValue;
-
-        for (int i = 0; i < listaDeObjetos.Count; i++)
+        if(currentValue < 25)
         {
-            listaDeObjetos[i].SetActive(i < elementosActivados);
+            int elementosActivados = 24 - currentValue;
+            for (int i = 0; i < listaDeObjetos.Count; i++)
+            {
+                listaDeObjetos[i].SetActive(i < elementosActivados);
+            }
         }
-
     }
 }
